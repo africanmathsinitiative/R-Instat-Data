@@ -1,0 +1,2 @@
+# A few machines get an error when adding the month_abbr variable in the Climatic > Dates > Use Date dialog; This seems to be because of their keyboard setting; We have included a general fix, but some machines still get this error; Getting the months as numeric in the dialog works fine, but running this one-line code also seems to fix the problem (within the session) as well; 
+Sys.setlocale("LC_TIME", "C")
